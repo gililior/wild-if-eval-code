@@ -96,7 +96,6 @@ if __name__ == '__main__':
     parser.add_argument("--API_endpoint",
                         default="https://inference-3scale-apicast-production.apps.rits.fmaas.res.ibm.com/{}/v1")
     parser.add_argument("--data", help="ds name in hub")
-    parser.add_argument("--split", required=True, choices=['train', 'validation', 'test'])
     parser.add_argument("--tasks_batch_size", type=int, default=200,
                         help="number of tasks to run inference on before saving")
     parser.add_argument("--out_dir", required=True)
