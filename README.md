@@ -1,7 +1,8 @@
 # WildIFEval: Supporting Code
 
-This repository contains the supporting code for the [WildIFEval dataset](https://huggingface.co/datasets/gililior/wild-if-eval){:target="_blank"},  
-which was introduced in the paper ["WildIFEval: Instruction Following in the Wild"](){:target="_blank"}.
+This repository contains the supporting code for the  
+<a href="https://huggingface.co/datasets/gililior/wild-if-eval" target="_blank">WildIFEval dataset</a>,  
+which was introduced in the paper <a href="PAPER_LINK_HERE" target="_blank">"WildIFEval: Instruction Following in the Wild"</a>.
 
 ## Repository Contents
 
@@ -35,5 +36,12 @@ This repo also includes the following data:
 
 3. **Analysis Output** – Results from analysis scripts, including all figures from the paper  
    📂 [analysis_output/](analysis_output)
+
+---
+
+### 📢 Notes
+- **Links to GitHub directories and files** will open in the same tab (GitHub limitation).
+- **External links** (like Hugging Face or paper links) will open in a new tab **only when viewed in a browser that supports HTML links inside Markdown.**
+- If viewing on **GitHub**, you can **Ctrl + Click (Windows/Linux)** or **Cmd + Click (Mac)** to open in a new tab.
 
 ---
