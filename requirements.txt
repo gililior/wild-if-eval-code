@@ -6,3 +6,6 @@ tqdm
 numpy
 matplotlib
 pandas
+vllm
+scikit-learn
+gdown
