@@ -1,8 +1,6 @@
 # Preprocessing Scripts for WildIFEval
 
-This directory contains scripts for preprocessing the  
-<a href="https://huggingface.co/datasets/lmsys/lmsys-chat-1m" target="_blank">lmsys-chat-1m</a> dataset  
-to create the **WildIFEval** dataset.
+This directory contains scripts for preprocessing the <a href="https://huggingface.co/datasets/lmsys/lmsys-chat-1m" target="_blank">lmsys-chat-1m</a> dataset to create the **WildIFEval** dataset.
 
 ## 🛠️ Preprocessing Steps
 
