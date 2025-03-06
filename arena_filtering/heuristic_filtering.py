@@ -4,9 +4,7 @@ from argparse import ArgumentParser
 import detoxify
 from tqdm import tqdm
 import json
-
-DATASET = "lmsys/lmsys-chat-1m"
-SPLIT = "train"
+from arena_filtering.constants import LMSYS_NAME_IN_HUB, LMSYS_SPLIT
 
 
 def leave_only_first_request(example):
@@ -52,7 +50,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     os.makedirs(os.path.dirname(args.out_path), exist_ok=True)
-    ds = load_dataset(DATASET, split='train')
+    ds = load_dataset(LMSYS_NAME_IN_HUB, split=LMSYS_SPLIT)
 
     filtered_ids = filter_data(ds)
     with open(args.out_path, 'wt') as f:

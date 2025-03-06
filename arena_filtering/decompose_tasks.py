@@ -1,8 +1,6 @@
 import json
 from arena_filtering.classify_constrained_generation_tasks import ConstrainedGenerationClassification, BaseDataset
 from arena_filtering.constants import DECOMPOSE_PROMPT
-from arena_filtering.heuristic_filtering import DATASET
-from datasets import load_dataset
 import re
 from argparse import ArgumentParser
 

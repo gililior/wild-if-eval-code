@@ -11,14 +11,14 @@ import json
 from openai import OpenAI
 
 from datasets import load_dataset
-from arena_filtering.heuristic_filtering import DATASET, SPLIT, leave_only_first_request
-ERROR_SCORE = 0
+from constants import LMSYS_NAME_IN_HUB, LMSYS_SPLIT, ERROR_SCORE
+from arena_filtering.heuristic_filtering import leave_only_first_request
 
 
 class BaseDataset:
 
     def __init__(self, path_to_ids):
-        self.lmsys_data = load_dataset(DATASET, split=SPLIT)
+        self.lmsys_data = load_dataset(LMSYS_NAME_IN_HUB, split=LMSYS_SPLIT)
         self.filtered_ids = []
         with open(path_to_ids, 'rt') as f:
             self.filtered_ids = json.load(f)
@@ -40,7 +40,7 @@ class BaseDataset:
 class ConstrainedGenerationClassification:
     MAX_WORKERS = 20
 
-    def __init__(self, data: BaseDataset, model_name, api_endpoint, api_key_name, max_new_tokens):
+    def __init__(self, data, model_name, api_endpoint, api_key_name, max_new_tokens):
         self.model_name_for_generation = self.get_model_name_for_generation(model_name)
         self.api_endpoint = api_endpoint
         self.api_key_name = api_key_name

@@ -1,8 +1,20 @@
 
 
+In this directory are scripts that preprocess the [lmsys-chat-1m](https://huggingface.co/datasets/lmsys/lmsys-chat-1m) dataset.
+
+It icludes the following steps:
+1. Heuristic filtering - non English, code, toxic language.
+2. Classification of constrained generation tasks using an LLM.
+3. Filtering tasks based on the classification scores.
+4. Decomposition of tasks into constraints using an LLM.
+5. Upload the decomposed tasks to the Hugging Face Hub.
+
+### Usage
+
 ```shell
 python arena_filtering/heuristic_filtering.py --out_path /path/to/save/filtered/ids/json
 ```
+
 
 ```shell
 python arena_filtering/classify_constrained_generation_tasks.py --path_to_filtered_ids /path/to/save/filtered/ids/json \
