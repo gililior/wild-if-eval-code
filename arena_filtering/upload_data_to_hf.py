@@ -11,7 +11,8 @@ def push_to_hub(json_path, name_in_hub):
     task_ids = list(data.keys())
     decomposition = [data[task_id] for task_id in task_ids]
     ds = Dataset.from_dict({"conversation_id": task_ids, "decomposition": decomposition})
-    ds.push_to_hub(name_in_hub, token=hf_token, split="test")
+    ds_up_to_8_constraints = ds.filter(lambda x: len(x["decomposition"]) <= 8)
+    ds_up_to_8_constraints.push_to_hub(name_in_hub, token=hf_token, split="test")
 
 
 if __name__ == '__main__':
