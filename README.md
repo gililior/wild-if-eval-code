@@ -1,16 +1,39 @@
-This repo is the supporting code for the [WildIFEval](https://huggingface.co/datasets/gililior/wild-if-eval) dataset, 
-which was presented in the paper ["WildIFEval: Instruction Following in the Wild"]().
+# WildIFEval: Supporting Code
 
+This repository contains the supporting code for the [WildIFEval dataset](https://huggingface.co/datasets/gililior/wild-if-eval){:target="_blank"},  
+which was introduced in the paper ["WildIFEval: Instruction Following in the Wild"](){:target="_blank"}.
+
+## Repository Contents
+
+### 🛠️ **Scripts**
 This repo includes the following scripts:
-1. Preprocessing scripts, filtering the lmsys-chat-1m (chatbot-arena) dataset to create the WildIFEval dataset - [arena_filtering/](arena_filtering)
-2. Inference scripts to evaluate the performance of LLMs on WildIFEval - [evaluate_llms/](evaluate_llms)
-3. Evaluation script to evaluate the performance on WildIFEval, using LLM as a Judge - [evaluate_llms/llms_aaj_constraint_multiproc.py](evaluate_llms/llms_aaj_constraint_multiproc.py)
-4. Analysis scripts to analyze the characteristics of WildIFEval, and also the performance of LLMs on WildIFEval - [analysis/](analysis)
 
-**To replicate the results from the paper, you can follow the instructions in the respective directories.**
+1. **Preprocessing** – Filters the `lmsys-chat-1m` (Chatbot Arena) dataset to create WildIFEval  
+   📂 [arena_filtering/](arena_filtering)
+   
+2. **Inference** – Evaluates the performance of LLMs on WildIFEval  
+   📂 [evaluate_llms/](evaluate_llms)
 
+3. **Evaluation** – Uses LLMs as judges to assess performance on WildIFEval  
+   📄 [evaluate_llms/llms_aaj_constraint_multiproc.py](evaluate_llms/llms_aaj_constraint_multiproc.py)
 
+4. **Analysis** – Examines the characteristics of WildIFEval and LLM performance  
+   📂 [analysis/](analysis)
+
+**🔹 To replicate the results from the paper, follow the instructions in the respective directories.**
+
+---
+
+### 📊 **Data**
 This repo also includes the following data:
-1. Few open-source LLMs predictions on WildIFEval - [model_predictions/](model_predictions)
-2. The evaluation results using LLM as a Judge on the existing predictions - [llm_aaj_scores/](llm_aaj_scores)
-3. Output of the analysis scripts, including all figures from the paper - [analysis_output/](analysis_output)
+
+1. **Model Predictions** – Few open-source LLMs' responses on WildIFEval  
+   📂 [model_predictions/](model_predictions)
+
+2. **Evaluation Results** – Scores obtained using LLM as a judge  
+   📂 [llm_aaj_scores/](llm_aaj_scores)
+
+3. **Analysis Output** – Results from analysis scripts, including all figures from the paper  
+   📂 [analysis_output/](analysis_output)
+
+---
