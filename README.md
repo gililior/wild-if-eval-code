@@ -17,7 +17,7 @@ This repo includes the following scripts:
    📄 [evaluate_llms/llms_aaj_constraint_multiproc.py](evaluate_llms/llms_aaj_constraint_multiproc.py)
 
 4. **Analysis** – Examines the characteristics of WildIFEval and LLM performance  
-   📂 [analysis/](analysis)
+   📂 [data_analysis/](data_analysis)
 
 **🔹 To replicate the results from the paper, follow the instructions in the respective directories.**
 
