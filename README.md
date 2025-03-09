@@ -36,10 +36,3 @@ This repo also includes the following data:
    📂 [analysis_output/](analysis_output)
 
 ---
-
-### 📢 Notes
-- **Links to GitHub directories and files** will open in the same tab (GitHub limitation).
-- **External links** (like Hugging Face or paper links) will open in a new tab **only when viewed in a browser that supports HTML links inside Markdown.**
-- If viewing on **GitHub**, you can **Ctrl + Click (Windows/Linux)** or **Cmd + Click (Mac)** to open in a new tab.
-
----
