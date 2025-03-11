@@ -1,6 +1,6 @@
 # WildIFEval: Supporting Code
 
-This repository contains the supporting code for the <a href="https://huggingface.co/datasets/gililior/wild-if-eval" target="_blank">WildIFEval dataset</a>, which was introduced in the paper <a href="PAPER_LINK_HERE" target="_blank">"WildIFEval: Instruction Following in the Wild"</a>.
+This repository contains the supporting code for the <a href="https://huggingface.co/datasets/gililior/wild-if-eval" target="_blank">WildIFEval dataset</a>, which was introduced in the paper <a href="https://arxiv.org/abs/2503.06573" target="_blank">WildIFEval: Instruction Following in the Wild</a>.
 
 ## Repository Contents
 
