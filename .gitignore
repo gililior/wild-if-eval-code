@@ -22,6 +22,9 @@ llm_aaj_scores/
 analysis_output/atomics.npy
 analysis_output/figures/
 
+# HuggingFace snapshot_download cache (created in --dest by download_predictions.py)
+.cache/
+
 # Output JSONs produced by data_analysis/plots_for_paper.py
 hard_tasks.json
 hard_tasks_as_list.json

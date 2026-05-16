@@ -30,10 +30,13 @@ def main():
     dest = Path(args.dest).resolve()
     dest.mkdir(parents=True, exist_ok=True)
     print(f"Downloading {args.repo} into {dest} ...")
+    # Restrict to the two data folders so the dataset's own README.md /
+    # .gitattributes don't overwrite files in the code repo when --dest is ".".
     snapshot_download(
         repo_id=args.repo,
         repo_type="dataset",
         local_dir=str(dest),
+        allow_patterns=["model_predictions/*", "llm_aaj_scores/*"],
     )
     print("Done. Verify model_predictions/ and llm_aaj_scores/ now contain the JSON files.")
 
