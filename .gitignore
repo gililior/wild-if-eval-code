@@ -1,0 +1,42 @@
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Large generated / downloaded data (host on HF instead)
+model_predictions/
+llm_aaj_scores/
+analysis_output/atomics.npy
+analysis_output/figures/
+
+# Output JSONs produced by data_analysis/plots_for_paper.py
+hard_tasks.json
+hard_tasks_as_list.json
+random_tasks.json
+random_as_list.json
+tasks_to_remove.json
+big_vs_small.json
+all_others_faild_*.json
+
+# Dataset cards for the HF datasets (upload to HF, not this repo)
+hf_dataset_card.md
+hf_wild_if_eval_card.md
+
+# Author-only tooling, not part of the public release
+scripts/upload_predictions.py
+
+# Redundant human-readable dump of per_task_scores.parquet (no script reads it)
+scripts/scale_experiment/data/per_task_scores.csv
